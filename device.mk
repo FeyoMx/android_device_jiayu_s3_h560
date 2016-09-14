@@ -2,19 +2,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
-$(call inherit-product, device/jiayu/s3_h560/vendor/copyfiles.mk)
-$(call inherit-product, vendor/jiayu/s3_h560/s3_h560-vendor-blobs.mk)
+$(call inherit-product, device/lenovo/aio_otfp/vendor/copyfiles.mk)
+$(call inherit-product, vendor/lenovo/aio_otfp/aio_otfp-vendor-blobs.mk)
 
-LOCAL_PATH := device/jiayu/s3_h560
+LOCAL_PATH := device/lenovo/aio_otfp
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_LOCALES := en_US ru_RU uk_UA cs_CZ es_ES es_US
 
 # Recovery allowed devices
-TARGET_OTA_ASSERT_DEVICE := h560,s3_h560
+TARGET_OTA_ASSERT_DEVICE := aio_otfp
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
