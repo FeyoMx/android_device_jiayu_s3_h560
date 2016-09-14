@@ -1,7 +1,7 @@
 #!/bin/sh
 
-VENDOR=jiayu
-DEVICE=s3_h560
+VENDOR=lenovo
+DEVICE=aio_otfp
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
