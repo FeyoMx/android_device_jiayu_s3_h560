@@ -1,6 +1,6 @@
 #
 #
-# system.prop for Jiayu S3
+# system.prop for Lenovo aio_otfp
 #
 
 rild.libpath=/system/lib64/mtk-ril.so
