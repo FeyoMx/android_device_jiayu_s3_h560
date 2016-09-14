@@ -1,6 +1,6 @@
 # mt6752 platform boardconfig
-LOCAL_PATH := device/jiayu/s3_h560
--include vendor/jiayu/s3_h560/BoardConfigVendor.mk
+LOCAL_PATH := device/lenovo/aio_otfp
+-include vendor/lenovo/aio_otfp/BoardConfigVendor.mk
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
@@ -191,5 +191,5 @@ $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 
 # SELinux
 BOARD_SEPOLICY_DIRS := \
-       device/jiayu/s3_h560/sepolicy
+       device/lenovo/aio_otfp/sepolicy
 
